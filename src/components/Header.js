@@ -7,7 +7,7 @@ const navigation = [
   { name: 'employees', href: '/employees'},
   { name: 'customers', href: '/customers'},
   { name: 'dictionary', href: '/dictionary'},
-  { name: 'Calendar', href: '/other2'},
+  { name: 'Calendar', href: '/calendar'},
 ]
 
 function classNames(...classes) {
@@ -101,7 +101,12 @@ export default function Header(props) {
         </>
       )}
     </Disclosure>
-      {props.children}
+    <div className='bg-gray-300'>
+      <div className='max-w-7xl mx-auto min-h-screen px-3 py-2'>
+        {props.children}
+      </div>
+    </div>
+
     </>
   );
 }
